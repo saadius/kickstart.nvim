@@ -276,6 +276,19 @@ require('lazy').setup({
       vim.g.vimwiki_list = {
         {
           path = '~/Documents/vimwiki',
+          -- path = '~/Documents/vimwiki/music/main.md',
+          syntax = 'markdown',
+          ext = '.md',
+        },
+        {
+          path = '~/Documents/vimwiki/music',
+          -- path = '~/Documents/vimwiki/music/main.md',
+          syntax = 'markdown',
+          ext = '.md',
+        },
+        {
+          path = '~/Documents/vimwiki/school',
+          -- path = '~/Documents/vimwiki/music/main.md',
           syntax = 'markdown',
           ext = '.md',
         },
@@ -465,15 +478,15 @@ require('lazy').setup({
 
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
-      require('snacks').setup {
-        image = { enabled = true },
-        renderer = {
-          latex = {
-            enable = true,
-            backend = 'mathjax',
-          },
-        },
-      }
+      -- require('snacks').setup {
+      --   image = { enabled = true },
+      --   renderer = {
+      --     latex = {
+      --       enable = true,
+      --       backend = 'mathjax',
+      --     },
+      --   },
+      -- }
 
       require('telescope').setup {
         -- You can put your default mappings / updates / etc. in here
